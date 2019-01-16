@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+           <form class="form-this-date">
+                <label for="month">Перейти до: </label>
+                <select name="month" id="month" onchange="jump()">
+                    <option value=0>Січень</option>
+                    <option value=1>Лютий</option>
+                    <option value=2>Березень</option>
+                    <option value=3>Квітень</option>
+                    <option value=4>Травень</option>
+                    <option value=5>Червень</option>
+                    <option value=6>Липень</option>
+                    <option value=7>Серпень</option>
+                    <option value=8>Вересень</option>
+                    <option value=9>Жовтень</option>
+                    <option value=10>Листопад</option>
+                    <option value=11>Грудень</option>
+                </select>
+                <label for="year"></label>
+                <select id="year" onchange="jump()">
+                    <option value=1990>1990</option>
+                    <option value=1991>1991</option>
+                    <option value=1992>1992</option>
+                    <option value=1993>1993</option>
+                    <option value=1994>1994</option>
+                    <option value=1995>1995</option>
+                    <option value=1996>1996</option>
+                    <option value=1997>1997</option>
+                    <option value=1998>1998</option>
+                    <option value=1999>1999</option>
+                    <option value=2000>2000</option>
+                    <option value=2001>2001</option>
+                    <option value=2002>2002</option>
+                    <option value=2003>2003</option>
+                    <option value=2004>2004</option>
+                    <option value=2005>2005</option>
+                    <option value=2006>2006</option>
+                    <option value=2007>2007</option>
+                    <option value=2008>2008</option>
+                    <option value=2009>2009</option>
+                    <option value=2010>2010</option>
+                    <option value=2011>2011</option>
+                    <option value=2012>2012</option>
+                    <option value=2013>2013</option>
+                    <option value=2014>2014</option>
+                    <option value=2015>2015</option>
+                    <option value=2016>2016</option>
+                    <option value=2017>2017</option>
+                    <option value=2018>2018</option>
+                    <option value=2019>2019</option>
+                    <option value=2020>2020</option>
+                    <option value=2021>2021</option>
+                    <option value=2022>2022</option>
+                    <option value=2023>2023</option>
+                    <option value=2024>2024</option>
+                    <option value=2025>2025</option>
+                    <option value=2026>2026</option>
+                    <option value=2027>2027</option>
+                    <option value=2028>2028</option>
+                    <option value=2029>2029</option>
+                    <option value=2030>2030</option>
+                </select>
+            </form>
+            <div class="control-button">
+                <button onclick="previous()">Попередній місяць</button>
+                <button onclick="next()">Наступний місяць</button>
+            </div>
+            <h1 class="card-header" id="monthAndYear"></h1>
+            <table id="calendar">
+                <thead>
+                <tr>
+                    <th>ПН</th>
+                    <th>ВТ</th>
+                    <th>СР</th>
+                    <th>ЧТ</th>
+                    <th>ПТ</th>
+                    <th>СБ</th>
+                    <th>НД</th>
+                </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="old-left">
+    <img class="img-old-Kyiv" src="image/old-kiev.jpg" alt="old-Kyiv">
+    <p>Если вы не сдаётесь, это имеет значение. — <strong>Стивен Хокинг</strong></p>
+    <p>Будь собой, остальные роли заняты. — <strong>Оскар Уайльд</strong></p>
+    <p>Ваше время ограничено, не тратьте его, проживая чужую жизнь. Не попадайтесь на крючок вероучения, которое существует на мышлении других людей. Не позволяйте взглядам других заглушать свой собственный внутренний голос. И очень важно иметь мужество следовать своему сердцу и интуиции. Они, так или иначе, уже знают, что вы действительно хотите сделать. Все остальное — второстепенно. — <strong>Стив Джобс</strong></p>
+    </div>
+    <script src="test.js" defer></script>
+</body>
+</html>
